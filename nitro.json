@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["recyclerlist"],
+  "ios": {
+    "iosModuleName": "Recyclerlist"
+  },
+  "android": {
+    "androidNamespace": ["recyclerlist"],
+    "androidCxxLibName": "recyclerlist"
+  },
+  "autolinking": {
+    "Recyclerlist": {
+      "swift": "HybridRecyclerlist",
+      "kotlin": "HybridRecyclerlist"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
