@@ -4,6 +4,7 @@
     "paths": {
       "react-native-recyclerlist": ["./src/index"]
     },
+    "typeRoots": ["./src/types", "./node_modules/@types"],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "customConditions": ["react-native-strict-api"],

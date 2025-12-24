@@ -9,7 +9,4 @@ export interface RecyclerlistProps extends HybridViewProps {
 }
 export interface RecyclerlistMethods extends HybridViewMethods {}
 
-export type Recyclerlist = HybridView<
-  RecyclerlistProps,
-  RecyclerlistMethods
->;
+export type Recyclerlist = HybridView<RecyclerlistProps, RecyclerlistMethods>;

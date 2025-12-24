@@ -21,6 +21,16 @@ Pod::Spec.new do |s|
 
   s.dependency 'React-jsi'
   s.dependency 'React-callinvoker'
+  s.static_framework = true
+
+  # s.pod_target_xcconfig = {
+  #   'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+  # }
+
+  s.pod_target_xcconfig = {
+  'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Public/ReactCommon" "$(PODS_ROOT)/Headers/Public/ReactCommon/react/renderer"',
+  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+ }
 
   load 'nitrogen/generated/ios/Recyclerlist+autolinking.rb'
   add_nitrogen_files(s)
